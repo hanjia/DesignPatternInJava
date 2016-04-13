@@ -1,18 +1,16 @@
 package org.hanjia.designpattern.structural.adapter;
 
-import org.hanjia.designpattern.structural.adapter.util.BoundingBox;
-import org.hanjia.designpattern.structural.adapter.util.Coordinate;
-import org.hanjia.designpattern.structural.adapter.util.Manipulator;
-import org.hanjia.designpattern.structural.adapter.util.Point;
+import org.hanjia.designpattern.structural.Coordinate;
+import org.hanjia.designpattern.structural.Manipulator;
+import org.hanjia.designpattern.structural.Point;
 
 /**
  *
- * Class Adapter
- * 
+ * Class Adapter: by implementing Adaptee and by extending Target
  * @author hanjia
  *
  */
-public class TextShape extends TextView implements Shape {
+public class TextShape extends Shape implements TextView {
 	Coordinate bottom, left, width, height;
 
 	@Override
@@ -30,12 +28,30 @@ public class TextShape extends TextView implements Shape {
 		return new BoundingBox(bottomLeft, topRight);
 	}
 
+	@Override
+	public void getOrigin(Coordinate x, Coordinate y) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void getExtent(Coordinate width, Coordinate height) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean isEmpty() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }
 
 
 /**
  * 
- * Object Adapter
+ * Object Adapter: by composing an instance of adaptee
  * 
  */
 //public class TextShape implements Shape {

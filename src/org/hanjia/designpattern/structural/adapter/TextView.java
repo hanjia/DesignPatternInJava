@@ -1,18 +1,18 @@
 package org.hanjia.designpattern.structural.adapter;
 
-import org.hanjia.designpattern.structural.adapter.util.Coordinate;
+import org.hanjia.designpattern.structural.Coordinate;
 
-public class TextView {	
-	public void getOrigin(Coordinate x, Coordinate y) {
-		// Implementation
-	}
+/**
+ * 
+ * Adaptee
+ * @author hajia
+ *
+ */
+public interface TextView {	
 	
-	public void getExtent(Coordinate width, Coordinate height) {
-		// Implementation		
-	}
+	public void getOrigin(Coordinate x, Coordinate y);
 	
-	public boolean isEmpty() {
-		// Implementation
-		return false;
-	}
+	public void getExtent(Coordinate width, Coordinate height);
+	
+	public boolean isEmpty();
 }

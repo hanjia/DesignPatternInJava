@@ -1,4 +1,4 @@
-package org.hanjia.designpattern.structural.adapter.util;
+package org.hanjia.designpattern.structural;
 
 public class Point {
 	private int x;
