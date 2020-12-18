@@ -1,11 +1,12 @@
-bin
+bin/*
 .settings/
 .classpath
-.project
 *.class
 .DS_Store
 target/*
 .settings/*
+.idea/*
+*.iml
 
 # Package Files #
 *.jar
